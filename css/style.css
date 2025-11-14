@@ -1,3 +1,24 @@
+:root{
+  --nims-red:#c62828;
+  --nims-deep:#8e1e1e;
+  --bg:#FFEBC9; --brand:#cf2027; --text:#1e1e1e;
+  --tile-radius:18px;
+
+  /* Section 4 variables */
+  --brand-red:#cf2027;
+  --hero-h: 560px;
+  --hero-radius: 20px;
+  --hero-maxw: 1140px;
+
+  /* Cutting edge */
+  --radius: 20px;
+  --shadow-1: 0 10px 22px rgba(0,0,0,.12);
+  --brand-red-2: #E53B3B;
+
+  --nims-accent:#cf2027;
+}
+
+
 html{overflow-x: hidden;} 
  body {
    font-family: "Times New Roman", sans-serif;
@@ -16,6 +37,7 @@ html{overflow-x: hidden;}
    color: #000 !important;
    font-weight: 500;
    margin: 0 5px;
+   font-size: 20px;
  }
 
  .navbar-nav .nav-link:hover {
@@ -34,6 +56,66 @@ html{overflow-x: hidden;}
    height: 40px;
    object-fit: contain;
  }
+
+
+/* HERO */
+.slider-wrap{position:relative}
+.slider-img{width:100%;height:100vh;object-fit:cover}
+@media (max-width: 1199.98px){.slider-img{height:80vh}}
+@media (max-width: 991.98px){.slider-img{height:60vh}}
+@media (max-width: 575.98px){.slider-img{height:48vh}}
+
+.slide-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;padding:0 1rem}
+.overlay-inner{max-width:760px}
+.overlay-title{font-weight:800;line-height:1.15;text-shadow:0 2px 16px rgb(0 0 0 / .45)}
+.overlay-sub{font-size:1.125rem;line-height:1.5;text-shadow:0 2px 16px rgb(0 0 0 / .4)}
+.overlay-dot{width:8px;height:8px;background:#ff6b6b;border-radius:50%;display:inline-block;margin-top:.5rem}
+
+/* RIGHT PANEL */
+.right-box{background:var(--nims-red);color:#fff;padding:28px 22px;min-height:100vh}
+@media (max-width: 991.98px){.right-box{min-height:unset}}
+.npf_wgts iframe{width:100% !important}
+
+
+/* Banner should always fill screen height perfectly */
+
+.banner-img {
+   height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Carousel full height fix */
+#carouselExampleAutoplaying,
+#carouselExampleAutoplaying .carousel-inner,
+#carouselExampleAutoplaying .carousel-item {
+    height: 100%;
+}
+
+/* On large displays, maintain height */
+@media (min-width: 1400px) {
+  .banner-img {
+    height: 100vh;   /* still full screen */
+    max-height: 1080px;
+  }
+}
+
+/* On tablets and mobile */
+@media (max-width: 991px) {
+  .banner-img {
+    height: 380px !important;   /* perfect height for tablets */
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-img {
+    height: 260px !important;   /* mobile optimized */
+  }
+}
+
+
+
+
 
  /* Banner Section */
  .hero-section {
@@ -2502,6 +2584,8 @@ html{overflow-x: hidden;}
       grid-gap: 15px;
     }
 
+
+    
     .nims-card {
       position: relative;
       border-radius: 12px;
@@ -2959,7 +3043,8 @@ html{overflow-x: hidden;}
     background: #fff;
     margin-top: -28px;
     border-radius: 6px;
-    font-size: 13.5px;
+    font-size: 16px;
+    line-height: 17px;
     color: #333;
     font-weight: 600;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
@@ -3064,7 +3149,7 @@ html{overflow-x: hidden;}
 
 .program-list li {
   padding: 4px 0;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: #333;
   padding-left: 18px;
@@ -3227,6 +3312,7 @@ html{overflow-x: hidden;}
   box-shadow: 0px 6px 25px rgba(0,0,0,0.08);
   overflow: hidden;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   transition: 0.3s ease;

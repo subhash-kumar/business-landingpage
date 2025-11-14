@@ -60,51 +60,67 @@
 
     <!-- Hero Carousel Section -->
     <section class="container-fluid p-0">
-        <div class="row g-0 align-items-center">
-
-            <!-- Left: Carousel Banner -->
-            <div class="col-lg-8 d-flex align-items-stretch equal-height">
-                <div id="carouselExampleAutoplaying" class="carousel slide banner" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/admission-banner.webp" class="d-block w-100" alt="Banner 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://nimsuniversity.edu.in/landing-pages/landing-page-images/branding/hostel-banner.webp"
-                                class="d-block w-100" alt="Banner 2">
-                        </div>
-                    </div>
-
-                    <!-- Carousel Controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+<div class="container-fluid p-0">
+    <div class="row g-0">
+      <!-- LEFT: Slider -->
+      <div class="col-lg-8 slider-wrap order-2 order-lg-1">
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" aria-label="Campus images slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="images/admission-banner.webp" class="slider-img" alt="Campus aerial view" />
             </div>
-
-            <!-- Right: Form Section -->
-            <div class="facebook-form col-md-4 ms-auto bg-danger py-5 col-11 m-auto  order-1 order-md-2">
-                <!-- <h5 class="text-white bg-danger text-center mt-2 fs-6">Admissions Open for NIMS University</h5> -->
-                <p class="text-white text-center mt-2 "><strong class="fs-6">Admissions Open for UG & PG Programmes
-                        2026–27</strong><br />
-                    <b>at NIMS University Enter your Details</b>
-                </p>
-                <div>
-                    <div class="main_form" style="background-color: #cf2027;">
-                        <div
-                            class="formContainer form-absolute block-class link-border form-position-right color-class icon-class">
-                            {{RegistrationForm}}</div>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="https://nimsuniversity.edu.in/landing-pages/landing-page-images/branding/hostel-banner.webp" class="slider-img" alt="Students at NIMS" />
             </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
+
+        <!-- Overlay -->
+        <!-- <div class="slide-overlay">
+          <div class="overlay-inner text-white text-center px-2">
+            <h1 class="overlay-title display-5 mb-3">
+              Admissions Open for<br class="d-none d-sm-inline" />Engineering &amp; Technology
+            </h1>
+            <p class="overlay-sub mb-0">Discover, Research, and Redefine Your Future</p>
+            <span class="overlay-dot" aria-hidden="true"></span>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- RIGHT: Register panel -->
+      <div class="col-lg-4 right-box d-flex align-items-start align-items-lg-center order-1 order-lg-2">
+        <div class="w-100">
+          <div class="text-center mb-3">
+            <div class="fw-bold">Admissions Open for UG &amp; PG Programmes 2025–26</div>
+            <div class="opacity-75 small">at NIMS University – Enter your details</div>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="register">
+              <div class="npf_wgts" data-height="520px" data-w="6204dddd5974691bddaf81786b249947"><iframe frameborder="0" width="100%" height="520px" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-downloads" src="https://widgets.nopaperforms.com/register?&amp;r=&amp;q=&amp;w=6204dddd5974691bddaf81786b249947&amp;m=&amp;cu=file:///C:/Users/Aqua/Downloads/landing-pages/perority.html"></iframe></div>
+              <noscript>
+                <div class="alert alert-light text-dark mt-3" role="status">Enable JavaScript to load the registration form.</div>
+              </noscript>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+        
     </section>
 
 
@@ -281,7 +297,7 @@
             <div class="row align-items-center" id="placements">
                 <!-- Left Side -->
                 <div class="col-lg-7 mb-4 mb-lg-0">
-                    <div class="placement-heading">
+                    <div class="placement-heading mt-4">
                         <h2>Empowering Futures Through <br><strong>Strong Placements</strong></h2>
                         <p>Top recruiters, record-breaking offers, and global career opportunities —
                             NIMS University ensures every student steps into success with confidence.</p>
@@ -336,7 +352,7 @@
 
 
             <!-- Bottom: Two Carousels -->
-            <div class="row g-4 g-lg-5 mt-4 mt-lg-5 align-items-end  ">
+            <div class="row g-4 g-lg-5 mt-1 mt-lg-1 align-items-end">
                 <!-- Left: Current Batch -->
                 <div class="col-lg-6">
                     <div class="border-0 shadow-sm" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.63) 0%, rgba(211, 231, 255, 0.63) 100%);
@@ -518,7 +534,7 @@
 
 
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-4">
                 <div class="slider">
                     <div class="slide-track">
                         <div class="slide">
@@ -1014,7 +1030,7 @@
     </section>
 
 
-    <section class="program-section py-5" id="courses">
+    <section class="program-section py-3" id="courses">
         <div class="container">
 
             <!-- TOP BANNER -->
