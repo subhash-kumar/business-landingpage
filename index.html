@@ -59,69 +59,66 @@
     </nav>
 
     <!-- Hero Carousel Section -->
-    <section class="container-fluid p-0">
-<div class="container-fluid p-0">
-    <div class="row g-0">
-      <!-- LEFT: Slider -->
-      <div class="col-lg-8 slider-wrap order-2 order-lg-1">
-        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" aria-label="Campus images slider">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src="images/admission-banner.webp" class="slider-img" alt="Campus aerial view" />
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src="https://nimsuniversity.edu.in/landing-pages/landing-page-images/branding/hostel-banner.webp" class="slider-img" alt="Students at NIMS" />
-            </div>
-            
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev" aria-label="Previous slide">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next" aria-label="Next slide">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
+   <section id="nims-hero" class="container-fluid p-0">
+  <div class="row g-0 align-items-stretch">
 
-        <!-- Overlay -->
-        <!-- <div class="slide-overlay">
-          <div class="overlay-inner text-white text-center px-2">
-            <h1 class="overlay-title display-5 mb-3">
-              Admissions Open for<br class="d-none d-sm-inline" />Engineering &amp; Technology
-            </h1>
-            <p class="overlay-sub mb-0">Discover, Research, and Redefine Your Future</p>
-            <span class="overlay-dot" aria-hidden="true"></span>
-          </div>
-        </div> -->
-      </div>
-
-      <!-- RIGHT: Register panel -->
-      <div class="col-lg-4 right-box d-flex align-items-start align-items-lg-center order-1 order-lg-2">
-        <div class="w-100">
-          <div class="text-center mb-3">
-            <div class="fw-bold">Admissions Open for UG &amp; PG Programmes 2025–26</div>
-            <div class="opacity-75 small">at NIMS University – Enter your details</div>
+    <!-- LEFT: Slider -->
+    <div class="col-lg-8 position-relative nims-slider-wrap">
+      <div id="nims-mainSlider" class="carousel slide h-100" data-bs-ride="carousel" aria-label="Campus images slider">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="images/admission-banner.webp"
+              class="d-block w-100 nims-slider-img" alt="Admission Banner" loading="lazy" />
           </div>
 
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="register">
-              <div class="npf_wgts" data-height="520px" data-w="6204dddd5974691bddaf81786b249947"><iframe frameborder="0" width="100%" height="520px" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-downloads" src="https://widgets.nopaperforms.com/register?&amp;r=&amp;q=&amp;w=6204dddd5974691bddaf81786b249947&amp;m=&amp;cu=file:///C:/Users/Aqua/Downloads/landing-pages/perority.html"></iframe></div>
-              <noscript>
-                <div class="alert alert-light text-dark mt-3" role="status">Enable JavaScript to load the registration form.</div>
-              </noscript>
-            </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="https://nimsuniversity.edu.in/landing-pages/landing-page-images/branding/hostel-banner.webp"
+              class="d-block w-100 nims-slider-img" alt="Hostel Banner" loading="lazy" />
           </div>
         </div>
+
+        <!-- Custom Controls -->
+        <button class="nims-control-prev" type="button" data-bs-target="#nims-mainSlider" data-bs-slide="prev" aria-label="Previous slide">
+          <span class="nims-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="nims-control-next" type="button" data-bs-target="#nims-mainSlider" data-bs-slide="next" aria-label="Next slide">
+          <span class="nims-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
+      <!-- Overlay -->
+    
+    </div>
+
+    <!-- RIGHT: Register panel -->
+    <div class="col-lg-4  d-flex align-items-start align-items-lg-center nims-right-box bg-white">
+      <div class="w-100 p-3 p-lg-4">
+        <div class="text-center mb-3 text-white">
+          <div class="fw-bold fs-5">Admissions Open for UG &amp; PG Programmes 2025–26</div>
+          <div class="opacity-75 small">at NIMS University – Enter your details</div>
+        </div>
+
+        <div class="card shadow-sm border-0 nims-register-card bg-danger">
+          <div class="card-body">
+            <!-- Widget embed -->
+            <div class="npf_wgts" data-height="520px" data-w="6204dddd5974691bddaf81786b249947" role="region" aria-label="Registration form"></div>
+
+            <noscript>
+              <div class="alert alert-light text-dark mt-3" role="status">
+                Enable JavaScript to load the registration form.
+              </div>
+            </noscript>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
-
-
-        
-    </section>
+</section>
 
 
     <section class="py-5">
@@ -152,28 +149,28 @@
                         <div class="scroll-item active" data-img="images/cloud/nirf.png">
                             <div class="d-flex align-items-start">
                                 <img src="images/cloud/nirf.png" alt="">
-                                <p class="mb-0 small">Nims University secures a top ranking in NIRF, showcasing
+                                <p class="mb-0 small fs-6">Nims University secures a top ranking in NIRF, showcasing
                                     excellence in education and research!</p>
                             </div>
                         </div>
                         <div class="scroll-item" data-img="images/cloud/cegr.png">
                             <div class="d-flex align-items-start">
                                 <img src="images/cloud/cegr.png" alt="">
-                                <p class="mb-0 small">Nims University recognized by CEGR for excellence in education and
+                                <p class="mb-0 small fs-6">Nims University recognized by CEGR for excellence in education and
                                     academic innovation!</p>
                             </div>
                         </div>
                         <div class="scroll-item" data-img="images/cloud/czech.png">
                             <div class="d-flex align-items-start">
                                 <img src="images/cloud/czech.png" alt="">
-                                <p class="mb-0 small">Nims University honored with the prestigious Czech 100 Best Award,
+                                <p class="mb-0 small fs-6">Nims University honored with the prestigious Czech 100 Best Award,
                                     recognizing our excellence and global impact!</p>
                             </div>
                         </div>
                         <div class="scroll-item" data-img="images/cloud/naac.png">
                             <div class="d-flex align-items-start">
                                 <img src="images/cloud/naac.png" alt="">
-                                <p class="mb-0 small">Nims University accredited with NAAC, reflecting our commitment to
+                                <p class="mb-0 small fs-6">Nims University accredited with NAAC, reflecting our commitment to
                                     academic excellence and quality education!</p>
                             </div>
                         </div>
@@ -181,7 +178,7 @@
                         <div class="scroll-item" data-img="images/cloud/qs-i-guage.png">
                             <div class="d-flex align-items-start">
                                 <img src="images/cloud/qs-i-guage.png" alt="">
-                                <p class="mb-0 small">Nims University proudly achieves the prestigious Diamond Rating by
+                                <p class="mb-0 small fs-6">Nims University proudly achieves the prestigious Diamond Rating by
                                     QS I-GAUGE, recognizing excellence in education and innovation! </p>
                             </div>
                         </div>
@@ -207,7 +204,7 @@
                             <div class="col-6 border-end p-3">
                                 <img src="images/accreditation-and-affiliation/accr01.png" alt="UGC" class="mb-3"
                                     style="height: 60px;">
-                                <p class="mb-0 small"><span class="red-color">NIMS</span> is Recognized by
+                                <p class="mb-0 small fs-6"><span class="red-color">NIMS</span> is Recognized by
                                     <strong>University Grants Commission (UGC)</strong> a statutory body of the
                                     government of India
                                 </p>
@@ -215,19 +212,19 @@
                             <div class="col-6 border-end p-3">
                                 <img src="images/accreditation-and-affiliation/accr02.png" alt="Dental" class="mb-3"
                                     style="height: 60px;">
-                                <p class="mb-0 small"><span class="red-color">NIMS Dental College & Hospital</span>
+                                <p class="mb-0 small fs-6"><span class="red-color">NIMS Dental College & Hospital</span>
                                     Approved by <strong>Dental Council of India</strong></p>
                             </div>
                             <div class="col-6 border-end p-3">
                                 <img src="images/accreditation-and-affiliation/accr03.png" alt="Architecture"
                                     class="mb-3" style="height: 60px;">
-                                <p class="mb-0 small"><span class="red-color">NIMS School of Architecture &
+                                <p class="mb-0 small fs-6"><span class="red-color">NIMS School of Architecture &
                                         Planning</span> Approved by <strong>Council of Architecture</strong></p>
                             </div>
                             <div class="col-6 p-3">
                                 <img src="images/accreditation-and-affiliation/accr04.png" alt="Nursing" class="mb-3"
                                     style="height: 60px;">
-                                <p class="mb-0 small"><span class="red-color">NIMS Nursing College</span> Approved by
+                                <p class="mb-0 small fs-6"><span class="red-color">NIMS Nursing College</span> Approved by
                                     <strong>Indian Nursing Council</strong>
                                 </p>
                             </div>
@@ -288,619 +285,827 @@
         </div>
     </section>
 
+<section class="nims-placements position-relative py-5 py-lg-6" id="placements" style="background-image: url(images/background-img.png);background-repeat: no-repeat;background-position: top center;padding-bottom: 40px !important;background-color: #fff;">
+  <div class="nims-bg"></div>
 
+  <div class="container position-relative">
+    <!-- Heading -->
+    <div class="row align-items-end g-4 g-lg-5">
+      <div class="col-lg-6">
+        <h2 class="nims-title mb-1">
+          Empowering Futures Through <span class="fw-bold">Strong Placements</span>
+        </h2>
+        <p class="nims-lead text-muted mb-4">
+          Top recruiters, record-breaking offers, and global career opportunities — NIMS University ensures every student steps into success with confidence.
+        </p>
+
+        <!-- KPI Tiles -->
+        <div class="row g-3 nims-kpis">
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">500+</div>
+                <div class="nims-kpi-text">Fortune Companies Visited</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">1.2 Cr.</div>
+                <div class="nims-kpi-text">Highest Overseas</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">350+</div>
+                <div class="nims-kpi-text">IIT/IIM/NIT Recruiters hire from NIMS</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">60 Lac</div>
+                <div class="nims-kpi-text">Highest Package</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">2000+</div>
+                <div class="nims-kpi-text">Recruiters hired NIMS students</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="nims-kpi card h-100">
+              <div class="card-body">
+                <div class="nims-kpi-num">1000+</div>
+                <div class="nims-kpi-text">Companies offering 10 LPA+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="col-lg-6 d-flex align-items-end">
+        <div class="nims-video-wrapper01 position-relative w-100 shadow rounded-3 overflow-hidden border">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/xiERlpl_jcQ"
+              title="Placement Success Stories | Management Students Placed at Bajaj Allianz | Nims University"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <!-- <div class="nims-video-caption">
+            Placement Success Stories | Management Students Placed at Bajaj Allianz | Nims University
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Carousels Row -->
+    <div class="row g-4 g-lg-5 mt-0 mt-lg-0 align-items-end">
+      <!-- Left: Current Batch -->
+      <div class="col-lg-6" >
+        <div class="  border-0 shadow-sm" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.63) 0%, rgba(211, 231, 255, 0.63) 100%);">
+          <div class=" p-3 p-lg-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h2 class="h5 mb-0 fs-4">Placement of <span class="fw-bold">2025–2026</span> Batch</h2>
+            
+            </div>
+
+            <!-- Bootstrap Carousel: Current -->
+            <div id="nimsCarouselCurrent" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/UDAY BHATNAGAR.webp" class="nims-card-img" alt="Uday Bhatnagar">
+                      
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/KAMRAN ASIF RAJA.webp" class="nims-card-img" alt="Kamran Asif Raja">
+                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/GOURAV.webp" class="nims-card-img" alt="Gourav">
+                      
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/harsh.webp" class="nims-card-img" alt="Harsh">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Optional indicators -->
+                 <div class="nims-arrows d-flex gap-3 pt-2">
+                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselCurrent" data-bs-slide="prev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselCurrent" data-bs-slide="next" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+              </div>
+             
+            </div>
+            <!-- /Bootstrap Carousel: Current -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Explore Achievements -->
+      <div class="col-lg-6"  >
+        <div class="  border-0 shadow-sm" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.63) 0%, rgba(211, 231, 255, 0.63) 100%);
+;"> 
+          <div class=" p-3 p-lg-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h2 class="h5 mb-0 fs-4">Explore More Placement Achievements</h2>
+             
+            </div>
+
+            <!-- Bootstrap Carousel: Achieve -->
+            <div id="nimsCarouselAchieve" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/tasneem.webp" class="nims-card-img" alt="Tasneem Kausar">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/shivam.webp" class="nims-card-img" alt="Shivam Kumar">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/sofiya.webp" class="nims-card-img" alt="Sofiya">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/ritika.webp" class="nims-card-img" alt="Ritika">
+                        <span class="nims-card-tag">Ritika</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/ISHITA MAHESWARI.webp" class="nims-card-img" alt="Ishita Maheshwari">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
+                        <img src="images/placement-achievemenr/SAKSHAM BHARDWAJ.webp" class="nims-card-img" alt="Saksham Bhardwaj">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Optional indicators -->
+                 <div class="nims-arrows d-flex gap-3 pt-2">
+                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselAchieve" data-bs-slide="prev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselAchieve" data-bs-slide="next" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            <!-- /Bootstrap Carousel: Achieve -->
+
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+         <div class="col-md-12">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-1.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-2.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-3.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-4.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-5.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-6.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-7.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-8.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-9.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-10.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-11.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-12.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-13.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-14.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-15.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-16.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-17.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-18.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-19.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-20.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-21.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-22.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-23.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-24.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-25.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-26.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-1.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-2.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-3.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-4.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-5.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-6.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-7.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-8.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-9.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-10.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-11.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-12.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-13.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-14.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-15.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-16.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-17.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-18.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-19.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-20.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-21.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-22.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-23.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-24.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-25.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo-26.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo01.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/logo02.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-2.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-4.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-5.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-6.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-7.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-8.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-9.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-10.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-11.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-12.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-13.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-14.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-15.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-16.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-17.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-18.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-19.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-20.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-21.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-22.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-23.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-24.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-25.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-26.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-27.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-28.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-29.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-30.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-31.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-32.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-33.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-34.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-35.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-36.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-37.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-38.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-39.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-40.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-41.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-42.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-43.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-44.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-45.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-46.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-47.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-48.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-49.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-50.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-51.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-52.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-53.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-54.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-55.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-56.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-57.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-58.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-59.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-60.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-62.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-63.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-64.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-65.webp"></span>
+                            </div>
+                            <div class="slide">
+                                <span><img src="images/logo-partner/All-Pages-66.webp"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+  </div>
+</section>
+
+
+  </div>
+</section>
+<style>
+    /* ====== NIMS Placements (Bootstrap 5 friendly) ====== */
+  .nims-placements{overflow:hidden;}
+  .nims-placements .nims-bg{
+    position:absolute; inset:0;
+    background:url('images/bg.png') center top/cover no-repeat;
+    opacity:1; z-index:0;
+  }
+
+  .nims-title{font-weight:600;}
+  .nims-lead{max-width:52ch;}
+.nims-placements p{font-size: 20px;}
+  /* KPI tiles */
+  .nims-kpi .card-body{padding:1rem .875rem;}
+  .nims-kpi-num{font-size:1.7rem; font-weight:800; line-height:1; color:#c62828; margin-bottom:.35rem;}
+  .nims-kpi-text{font-size:1.1rem; color:#333;}
+
+
+#nimsCarouselCurrent .carousel-inner,
+#nimsCarouselAchieve .carousel-inner {
+  min-height: 280px; /* same as image height */
+}
+
+ /* cloud section css */
+ .scroll-box {
+   height: 350px;
+   max-height: 350px;
+   min-height: 350px;
+   overflow-y: auto;
+   scroll-behavior: smooth;
+   border-left: 2px solid #ccc;
+   padding-left: 15px;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   background-color: #fff;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+   /* ✅ Box Shadow */
+   border-radius: 10px;
+ }
+
+ .scroll-box::-webkit-scrollbar {
+   display: none;
+ }
+
+ .scroll-item {
+   cursor: pointer;
+   padding: 10px 0;
+   border-bottom: 1px solid #eee;
+ }
+
+ .scroll-item.active {
+   font-weight: bold;
+   color: #cf2027;
+   background-color: #f9f9f9;
+ }
+
+ .scroll-item img {
+   width: 50px;
+   margin-right: 10px;
+ }
+
+ #activeImage {
+   max-width: 100%;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+  
+  
+/* ===== Infinite Logo Slider (Safe / No grayscale / No global img rules) ===== */
+.slider{
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%);
+  margin-top: 3%;
+}
+
+
+.slider .slide-track{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+  animation: nims-scroll var(--nims-duration, 40s) linear infinite;
+}
+
+.slider:hover .slide-track{
+  animation-play-state: paused;
+}
+
+.slider .slide{
+  flex: 0 0 auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: clamp(120px, 10vw, 180px); /* isolated only to this slider */
+}
+
+/* ✅ THIS ONLY AFFECTS LOGOS INSIDE SLIDER */
+.slider .slide img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes nims-scroll{
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-1 * var(--nims-distance, 1000px))); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .slider .slide-track{ animation: none; }
+}
+
+
+
+  /* Video */
+  .nims-video-wrapper{position:relative;}
+  .nims-video-caption{
+    position:absolute; inset:auto auto .6rem .6rem;
+    background:rgba(0,0,0,.65); color:#fff; font-size:.9rem;
+    padding:.5rem .875rem; border-radius:.5rem; max-width:85%; line-height:1.4;
+    backdrop-filter:blur(3px);
+  }
+
+  /* Cards inside carousels */
+  .nims-card{background:#fff;}
+  .nims-card-img{
+    width:100%; height:260px; object-fit:cover; background:#f8f8f8;
+  }
+  .nims-card-badge{
+    position:absolute; left:.6rem; top:.6rem;
+    background:#cf2027; color:#fff; font-weight:800; font-size:.95rem;
+    padding:.35rem .6rem; border-radius:.6rem;
+  }
+  .nims-card-tag{
+    position:absolute; left:.75rem; bottom:.75rem;
+    background:#fff; color:#1e1e1e; font-weight:700; font-size:.95rem;
+    padding:.35rem .75rem; border-radius:.8rem; box-shadow:0 6px 16px rgba(0,0,0,.1);
+  }
+
+  .nims-arrows .btn{width:36px; height:36px; border-radius:.6rem; line-height:1;}
+
+
+
+   /* ====== NIMS Placements (Bootstrap 5 friendly) ====== */
+  .nims-placements{overflow:hidden;}
+  .nims-placements .nims-bg{
+    position:absolute; inset:0;
+    background:url('images/bg.png') center top/cover no-repeat;
+    opacity:1; z-index:0;
+  }
+
+  .nims-title{font-weight:600;}
+  .nims-lead{max-width:52ch;}
+</style>
+
+
+
+    
 
     <!-- ===== Placement Section ===== -->
-    <section class="placement-section" style="background-image: url(images/background-img.png);">
-        <div class="container">
+    <!-- <section class="leadership-section">
+        <div class="container leadership-section">
+            <div class="row g-4 align-items-end">
+                
+                <div class="col-lg-7">
+                    <h3>Inspiring Leadership, Global Recognition</h3>
+                    <p>
+                        Our Hon'ble Chancellor, Dr. [Name], actively engages with eminent ministers,
+                        policymakers, and national dignitaries to foster partnerships that strengthen
+                        education, research, and innovation across India.
+                    </p>
 
-            <div class="row align-items-center" id="placements">
-                <!-- Left Side -->
-                <div class="col-lg-7 mb-4 mb-lg-0">
-                    <div class="placement-heading mt-4">
-                        <h2>Empowering Futures Through <br><strong>Strong Placements</strong></h2>
-                        <p>Top recruiters, record-breaking offers, and global career opportunities —
-                            NIMS University ensures every student steps into success with confidence.</p>
-                    </div>
-
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <h3>500+</h3>
-                            <p>Fortune Companies Visited</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>1.2 Cr.</h3>
-                            <p>Highest Overseas</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>350+</h3>
-                            <p>Recruiters of IITs/IIMs/NITs also hire from NIMS</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>60 Lac</h3>
-                            <p>Highest Package</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>2000+</h3>
-                            <p>Recruiters hired NIMS students</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>1000+</h3>
-                            <p>Companies offering 10 Lac pa. CTC or above</p>
-                        </div>
+                    <div class="main-banner">
+                        <img src="images/wold-health-img.png" alt="World Health Summit">
                     </div>
                 </div>
 
-                <!-- Right Side -->
-                <div class="col-lg-5 mt-lg-5 pt-lg-5 mt-0 pt-0">
-                    <div class="video-card01">
-                        <iframe src="https://www.youtube.com/embed/xiERlpl_jcQ"
-                            title="Placement Success Stories |  Management Students Placed at Bajaj Allianz | Nims University"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!-- <img src="images/video-thumbnail.jpg" alt="Placement Video">
-          <a href="https://www.youtube.com/embed/xiERlpl_jcQ" target="_blank" class="play-button">
-            <i class="bi bi-play-fill"></i>
-          </a>
-          <div class="video-caption">
-            Placement Success Stories | Management Students Placed at Bajaj Allianz | NIMS University
-          </div> -->
+                
+                <div class="col-lg-5">
+                    <div class="leader-grid">
+                        <div class="leader-card">
+                            <img src="images/inspiring-img01.png" alt="">
+                            <div class="leader-overlay">
+                                <strong>Sh. Arjun Ram Meghwal</strong>
+                                Minister of Law & Justice,<br> Govt. of India
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <img src="images/inspiring-img02.png" alt="">
+                            <div class="leader-overlay">
+                                <strong>Sh. Nitin Gadkari</strong>
+                                Minister of Road Transport & Highways,<br> Govt. of India
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <img src="images/inspiring-img03.png" alt="">
+                            <div class="leader-overlay">
+                                <strong>Sh. Sadhguru</strong>
+                                Founder, Isha Foundation
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <img src="images/inspiring-img04.png" alt="">
+                            <div class="leader-overlay">
+                                <strong>Sh. Anurag Thakur</strong>
+                                Minister of Information & Broadcasting,<br> Govt. of India
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- Bottom: Two Carousels -->
-            <div class="row g-4 g-lg-5 mt-1 mt-lg-1 align-items-end">
-                <!-- Left: Current Batch -->
-                <div class="col-lg-6">
-                    <div class="border-0 shadow-sm" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.63) 0%, rgba(211, 231, 255, 0.63) 100%);
-;">
-                        <div class=" p-3 p-lg-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h2 class="h5 mb-0">Placement of <span class="fw-bold">2025–2026</span> Batch</h2>
-
-                            </div>
-
-                            <!-- Bootstrap Carousel: Current -->
-                            <div id="nimsCarouselCurrent" class="carousel slide" data-bs-ride="false">
-                                <div class="carousel-inner">
-
-                                    <!-- Slide 1 -->
-                                    <div class="carousel-item active">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/plcement-slider/place-slider01.png"
-                                                        class="nims-card-img" alt="Uday Bhatnagar">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/plcement-slider/place-slider02.png"
-                                                        class="nims-card-img" alt="Kamran Asif Raja">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Slide 2 -->
-                                    <div class="carousel-item">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/plcement-slider/place-slider03.png"
-                                                        class="nims-card-img" alt="Gourav">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/plcement-slider/place-slider04.png"
-                                                        class="nims-card-img" alt="Harsh">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- Optional indicators -->
-                                <div class="nims-arrows d-flex gap-3 pt-2">
-                                    <div class="carousel-controls">
-                                        <button class="carousel-btn prev" type="button"
-                                            data-bs-target="#nimsCarouselCurrent" data-bs-slide="prev">
-                                            <i class="bi bi-arrow-left"></i>
-                                        </button>
-                                        <button class="carousel-btn next" type="button"
-                                            data-bs-target="#nimsCarouselCurrent" data-bs-slide="next">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </button>
-                                    </div>
-
-                                    <!-- <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselCurrent" data-bs-slide="prev" aria-label="Previous">‹</button>
-                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselCurrent" data-bs-slide="next" aria-label="Next">›</button> -->
-                                </div>
-
-                            </div>
-                            <!-- /Bootstrap Carousel: Current -->
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Explore Achievements -->
-                <div class="col-lg-6">
-                    <div class="  border-0 shadow-sm" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.63) 0%, rgba(211, 231, 255, 0.63) 100%);
-;">
-                        <div class=" p-3 p-lg-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <h2 class="h5 mb-0">Explore More Placement Achievements</h2>
-
-                            </div>
-
-                            <!-- Bootstrap Carousel: Achieve -->
-                            <div id="nimsCarouselAchieve" class="carousel slide" data-bs-ride="false">
-                                <div class="carousel-inner">
-
-                                    <!-- Slide 1 -->
-                                    <div class="carousel-item active">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/explore-placement/tasneem-kausar-tcs.png"
-                                                        class="nims-card-img" alt="Tasneem Kausar">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/explore-placement/shivam-kumar-Jha-infosys.png"
-                                                        class="nims-card-img" alt="Shivam Kumar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Slide 2 -->
-                                    <div class="carousel-item">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/explore-placement/rinkita-sharma.png"
-                                                        class="nims-card-img" alt="Sofiya">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/explore-placement/sofiya-yasin.png"
-                                                        class="nims-card-img" alt="Ritika">
-                                                    <!-- <span class="nims-card-tag">Ritika</span> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Slide 3 -->
-                                    <div class="carousel-item">
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/explore-placement/harsh-swarnkar.png"
-                                                        class="nims-card-img" alt="Ishita Maheshwari">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="nims-card card border-0 shadow-sm position-relative rounded-4 overflow-hidden">
-                                                    <img src="images/placement-achievemenr/SAKSHAM BHARDWAJ.webp"
-                                                        class="nims-card-img" alt="Saksham Bhardwaj">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- Optional indicators -->
-                                <div class="nims-arrows d-flex gap-3 pt-2">
-                                    <button class="carousel-btn prev" type="button"
-                                        data-bs-target="#nimsCarouselAchieve" data-bs-slide="prev">
-                                        <i class="bi bi-arrow-left"></i>
-                                    </button>
-                                    <button class="carousel-btn next" type="button"
-                                        data-bs-target="#nimsCarouselAchieve" data-bs-slide="next">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </button>
-                                    <!-- <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselAchieve" data-bs-slide="prev" aria-label="Previous">‹</button>
-                <button class="btn btn-light btn-sm nims-arrow" type="button" data-bs-target="#nimsCarouselAchieve" data-bs-slide="next" aria-label="Next">›</button> -->
-                                </div>
-                            </div>
-                            <!-- /Bootstrap Carousel: Achieve -->
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-md-12 mb-4">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-1.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-2.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-3.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-4.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-5.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-6.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-7.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-8.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-9.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-10.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-11.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-12.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-13.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-14.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-15.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-16.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-17.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-18.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-19.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-20.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-21.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-22.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-23.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-24.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-25.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-26.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-1.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-2.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-3.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-4.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-5.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-6.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-7.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-8.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-9.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-10.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-11.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-12.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-13.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-14.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-15.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-16.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-17.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-18.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-19.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-20.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-21.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-22.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-23.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-24.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-25.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo-26.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo01.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/logo02.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-2.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-4.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-5.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-6.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-7.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-8.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-9.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-10.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-11.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-12.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-13.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-14.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-15.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-16.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-17.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-18.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-19.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-20.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-21.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-22.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-23.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-24.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-25.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-26.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-27.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-28.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-29.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-30.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-31.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-32.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-33.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-34.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-35.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-36.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-37.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-38.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-39.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-40.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-41.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-42.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-43.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-44.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-45.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-46.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-47.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-48.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-49.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-50.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-51.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-52.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-53.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-54.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-55.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-56.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-57.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-58.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-59.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-60.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-62.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-63.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-64.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-65.webp"></span>
-                        </div>
-                        <div class="slide">
-                            <span><img src="images/logo-partner/All-Pages-66.webp"></span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-
-        </div>
-    </section>
+    </section> -->
 
     <!-- World-Class Infrastructure section -->
-    <section class="business-infra-section py-5">
+    <section class="business-infra-section py-5 mt-2">
         <div class="container">
             <div class="row g-4 align-items-center">
 
@@ -908,7 +1113,7 @@
                 <div class="col-lg-8">
 
                     <h2 class="fw-bold">World-Class Infrastructure at<br>NIMS School of Business</h2>
-                    <p class="mt-3 mb-5">
+                    <p class="mt-3 mb-5 fs-5">
                         State-of-the-art classrooms, advanced computer labs, and modern learning spaces designed to
                         foster
                         innovation, strategic thinking, and leadership—empowering students to excel in the dynamic world
@@ -1174,11 +1379,11 @@
 
     <!-- faculty section start -->
 
-    <section class="section-faculty py-3" style="background: #FFFAF7;">
+    <section class="section-faculty py-5" style="background: #ffebc9;">
         <div class="container placement-carousel">
 
             <h2 class="fw-bold mb-2 text-center">Meet Our Esteemed Faculty – Over 25+ Experienced Professors</h2>
-            <p class="mb-4 text-center">
+            <p class="mb-4 text-center fs-5">
                 Develop real-world tech-skills with our experienced faculties from IITs, Harvard, Stanford, NITs, IIITs
                 ...
             </p>
@@ -1398,163 +1603,177 @@
     </section>
 
     <!-- why nims video  -->
-    <section class="nims-first-choice position-md-relative py-5 mt-md-5 mb-md-5" id="Why-Us">
-        <div class="container position-relative">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 text-white pe-lg-5">
-                    <h2 class="fw-bold mb-3">Why NIMS should be your first choice</h2>
-                    <p>
-                        At NIMS University, we offer an unparalleled opportunity to earn an international degree
-                        that commands global recognition, opening doors to career prospects both at home and abroad.
-                        With a strong emphasis on international exposure, studying here can set you apart in the
-                        professional world, giving you a competitive edge.
-                    </p>
-                </div>
-
-                <div class="col-lg-6 position-md-relative">
-                    <div class="nims-video-wrapper position-relative">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/22CvPW6zjm4"
-                            title="NIMS University AI ML Programs" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-
-
-                <div class="nims-info-row d-flex flex-wrap justify-content-center text-center mt-5">
-                    <div class="nims-info-box">Global Presence: Only Indian university with a campus link in the U.S.
-                        — <b>Florida Tech University</b>.</div>
-                    <div class="nims-info-box highlight"><b style="font-size: 35px;">150+</b><br /> International
-                        Tie-Ups</div>
-                    <div class="nims-info-box"><b style="font-size: 22px;">Startup Support</b> Guiding students from
-                        ideas to successful ventures.</div>
-                    <div class="nims-info-box highlight"><b style="font-size: 22px;">Advanced Labs</b> World-class
-                        infrastructure with Siemens<br />and AWS labs.</div>
-                    <div class="nims-info-box"><b style="font-size: 35px;">90%</b><br />Doctorate Faculties</div>
-                </div>
-            </div>
-    </section>
+    <section class="nims-first-choice position-md-relative">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-lg-6 text-white pe-lg-5 mt-sm-0 mt-5">
+        <h2 class="fw-bold mb-3">Why NIMS should be your first choice</h2>
+        <p class="fs-5">
+          At NIMS University, we offer an unparalleled opportunity to earn an international degree
+          that commands global recognition, opening doors to career prospects both at home and abroad.
+          With a strong emphasis on international exposure, studying here can set you apart in the
+          professional world, giving you a competitive edge.
+        </p>
+      </div>
+<!-- Right Video -->
+<div class="col-lg-6 position-md-relative">
+  <div class="nims-video-wrapper position-relative">
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/22CvPW6zjm4"
+      title="NIMS University AI ML Programs"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
 
 
-    <style>
-        .nims-first-choice {
-            background-color: #cf2027;
-            color: #fff;
-            overflow: visible;
-            position: relative;
-            margin-bottom: 100px !important;
-        }
+    <!-- Bottom Info Boxes -->
+    <div class="nims-info-row d-flex flex-wrap justify-content-center text-center mt-5">
+      <div class="nims-info-box">Global Presence: Only Indian university with a campus link in the U.S. — <b>Florida Tech University</b>.</div>
+      <div class="nims-info-box highlight"><b style="font-size: 35px;">150+</b><br /> International Tie-Ups</div>
+      <div class="nims-info-box"><b style="font-size: 22px;">Startup Support</b> Guiding students from ideas to successful ventures.</div>
+      <div class="nims-info-box highlight"><b style="font-size: 22px;">Advanced Labs</b> World-class infrastructure with Siemens<br />and AWS labs.</div>
+      <div class="nims-info-box"><b style="font-size: 35px;">90%</b><br />Doctorate Faculties</div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== Section Background ===== */
+.nims-first-choice {
+  background-color: #cf2027;
+  color: #fff;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 100px !important;
+  margin-top: 90px;
+}
+
+/* ===== Video overlap ===== */
+.nims-video-wrapper01 {
+  position: relative;
+  top: 0px !important;
+  z-index: 5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;
+}
 
 
-        .nims-video-wrapper {
-            position: relative;
-            top: -90px !important;
-            z-index: 5;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
+.nims-video-wrapper {
+  position: relative;
+  top: -50px !important;
+  z-index: 5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(155, 155, 155, 0.2);
+}
+
+/* ===== Bottom Info Boxes ===== */
+.nims-info-row {
+  position: relative;
+  margin-bottom: -120px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0; /* no gap by default */
+}
+
+/* Base box style */
+.nims-info-box {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem 1.2rem;
+  border-radius: 10px;
+  width: 220px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Highlighted boxes */
+.nims-info-box.highlight {
+  background: #ffdcdc;
+  color: #000;
+    font-size: 1.4rem;
+
+}
+
+/* Hover effect */
+.nims-info-box:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== Zigzag pattern ===== */
+.nims-info-box:nth-child(odd) {
+  transform: translateY(30px);
+}
+.nims-info-box:nth-child(even) {
+  transform: translateY(-30px);
+}
+
+/* smooth hover with zigzag offset */
+.nims-info-box:nth-child(odd):hover {
+  transform: translateY(-28px);
+}
+.nims-info-box:nth-child(even):hover {
+  transform: translateY(12px);
+}
 
 
-        .nims-info-row {
-            position: relative;
-            margin-bottom: -120px;
-            z-index: 10;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0;
-        }
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 991px) {
+
+  .nims-first-choice{
+          margin-bottom: 0px !important;
+          margin-top: 0px;
+
+  }
+
+  /* Reset video position */
+  .nims-video-wrapper {
+    position: static !important;
+    top: 0 !important;
+    box-shadow: none;
 
 
-        .nims-info-box {
-            background: #000;
-            color: #fff;
-            padding: 1.5rem 1.2rem;
-            border-radius: 10px;
-            width: 220px;
-            font-weight: 500;
-            line-height: 1.4;
-            transition: transform 0.3s ease, background 0.3s ease;
-            margin: 0;
-            font-size: 1.4rem;
-        }
+  }
+
+  /* Reset margins and spacing */
+  .nims-info-row {
+    position: static;
+    margin-top: 0;
+    margin-bottom: 27px;
+    gap: 10px; /* small gap between boxes */
+  }
+
+  /* Normal layout, no zigzag */
+  .nims-info-box:nth-child(odd),
+  .nims-info-box:nth-child(even) {
+    transform: none;
+  }
+
+  /* Make boxes more flexible on smaller widths */
+  .nims-info-box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nims-info-box {
+    width: 90%;
+  }
+}
 
 
-        .nims-info-box.highlight {
-            background: #ffdcdc;
-            color: #000;
-            font-size: 1.4rem;
-
-        }
-
-
-        .nims-info-box:hover {
-            transform: translateY(-8px);
-        }
-
-
-        .nims-info-box:nth-child(odd) {
-            transform: translateY(30px);
-        }
-
-        .nims-info-box:nth-child(even) {
-            transform: translateY(-30px);
-        }
-
-
-        .nims-info-box:nth-child(odd):hover {
-            transform: translateY(-28px);
-        }
-
-        .nims-info-box:nth-child(even):hover {
-            transform: translateY(12px);
-        }
-
-
-
-        @media (max-width: 991px) {
-
-            .nims-first-choice {
-                margin-bottom: 0px !important;
-
-            }
-
-
-            .nims-video-wrapper {
-                position: static !important;
-                top: 0 !important;
-                box-shadow: none;
-
-
-            }
-
-
-            .nims-info-row {
-                position: static;
-                margin-top: 0;
-                margin-bottom: 0;
-                gap: 10px;
-            }
-
-
-            .nims-info-box:nth-child(odd),
-            .nims-info-box:nth-child(even) {
-                transform: none;
-            }
-
-
-            .nims-info-box {
-                width: 45%;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .nims-info-box {
-                width: 90%;
-            }
-        }
-    </style>
+</style>
 
 
 
@@ -1748,7 +1967,7 @@
 
     <!-- SECTION 3: NIMS Life — Inline Video Grid -->
     <section class="nims-life-wrap" id="nimsLife" style="background: #FFEBC9;">
-        <div class="container py-3 py-md-4">
+        <div class="container py-5 py-md-5">
             <h2 class="text-center mb-3">
                 Live the <span>NIMS Life</span> — Inspiring,<br class="d-none d-md-inline"> Vibrant, Unmatched.
             </h2>
@@ -1858,7 +2077,7 @@
         <div class="container">
             <div class="text-center mb-4">
                 <h2 class="fw-bold">Hostel Life at NIMS</h2>
-                <p class="text-muted mb-0">Well-furnished hostels with modern facilities ensure comfort, safety, and a
+                <p class="text-muted mb-0 fs-5">Well-furnished hostels with modern facilities ensure comfort, safety, and a
                     lively community experience for all residents.</p>
             </div>
 
@@ -1939,7 +2158,7 @@
                 <div class="col-6 col-md-4 col-lg-2 feature">
                     <img src="images/hostel-life/AC and Non AC room options.png" alt="AC and Non AC room options"
                         loading="lazy" decoding="async" />
-                    <p>AC &amp; Non-AC Rooms</p>
+                    <p>VRV (Multi-Split Type Air Conditioners) Hot & Cold</p>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 feature">
                     <img src="images/hostel-life/Wi-Fi Internet Service by Jio.png" alt="Wi-Fi Internet Service"
@@ -2222,7 +2441,7 @@
     </section> -->
 
 
-    <section class="campuslife-lnl-section" style="background: #fff !important;">
+    <section class="campuslife-lnl-section" style="background: #f3f0f0 !important">
         <div class="container">
 
             <div class="row">

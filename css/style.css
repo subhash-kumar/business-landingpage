@@ -57,6 +57,120 @@ html{overflow-x: hidden;}
    object-fit: contain;
  }
 
+ /* suuu */
+/* Base font */
+  #nims-hero { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+  /* Slider sizing */
+  .nims-slider-wrap { min-height: 360px; }
+  .carousel-inner, .carousel-item { height: 100%; }
+  .nims-slider-img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: block;
+    /* min-height: 320px; */
+  }
+
+  /* Overlay */
+  .nims-slide-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 1.25rem;
+    justify-content: flex-start;
+  }
+  .nims-overlay-inner {
+    max-width: 720px;
+    margin-left: 1rem;
+    background: rgba(0,0,0,0.36);
+    padding: 1rem 1.25rem;
+  }
+  .nims-overlay-title { line-height: 1.05; color: #fff; font-size: 1.35rem; }
+  .nims-overlay-sub { color: rgba(255,255,255,0.95); }
+  .nims-overlay-dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    background: #ffd000;
+    border-radius: 50%;
+    margin-top: .35rem;
+  }
+
+
+  /* Right panel */
+  .nims-right-box  {background-color: #cf2027 !important;}
+  .nims-register-card { border-radius: .6rem; }
+
+  /* Custom Controls */
+  .nims-control-prev,
+  .nims-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    z-index: 5;
+  }
+  .nims-control-prev { left: 1rem; }
+  .nims-control-next { right: 1rem; }
+  .nims-control-prev-icon,
+  .nims-control-next-icon {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    filter: invert(1);
+  }
+  .nims-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  }
+  .nims-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+
+  /* Larger screens */
+  @media (min-width: 992px) {
+    .nims-slider-wrap { min-height: 520px; }
+    .nims-slide-overlay { padding-left: 2rem; justify-content: flex-start; }
+    .nims-overlay-inner { margin-left: 2rem; }
+
+    /* Sticky card */
+    .nims-right-box { align-items: center; position: relative; }
+    .nims-register-card { max-width: 420px; margin: 0 auto; position: sticky; top: 15px; }
+  }
+
+  /* Medium/smaller screens */
+  @media (max-width: 991.98px) {
+    .nims-slide-overlay { align-items: center; justify-content: center; padding: 1rem; }
+    .nims-overlay-inner { width: 100%; max-width: 680px; background: rgba(0,0,0,0.45); text-align: center; }
+    .nims-overlay-title { font-size: 1.1rem; }
+    .nims-slider-wrap { min-height: 300px; }
+    /*.nims-right-box { order: 2; }*/
+    .nims-right-box .card { width: 100%; }
+     .lab-nav.prev {
+    height: 30px;
+    width: 30px;}
+.lab-nav.next{
+   height: 30px;
+    width: 30px;}
+
+  }
+ 
+  /* Extra small */
+  @media (max-width: 575.98px) {
+    .nims-overlay-title { font-size: 1rem; }
+    .nims-overlay-inner { padding: .75rem; }
+    .nims-slider-wrap { min-height: 240px; }
+  }
+
+/* suuu */
 
 /* HERO */
 .slider-wrap{position:relative}
@@ -271,6 +385,310 @@ html{overflow-x: hidden;}
  }
 
  /* Responsive Design */
+
+/* exploring future css start */
+
+/* inspiring section css */
+ .leadership-section {
+   padding: 60px 0;
+ }
+
+ .leadership-section h2 {
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 10px;
+ }
+
+ .leadership-section p.sub-text {
+   font-size: 15px;
+   color: #444;
+   margin-bottom: 35px;
+   max-width: 900px;
+ }
+
+ .left-banner img {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .right-images .img-box {
+   margin-bottom: 20px;
+ }
+
+ .right-images img {
+   width: 100%;
+   height: 160px;
+   object-fit: cover;
+   border-radius: 8px;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .caption {
+   font-size: 13px;
+   font-weight: 500;
+   color: #222;
+   margin-top: 6px;
+   line-height: 1.3;
+ }
+
+ .caption small {
+   font-weight: 400;
+   color: #555;
+ }
+
+ /* ---------- Inspiring Leadership  ---------- */
+ .leadership-section {
+   padding: 35px 5px;
+ }
+
+ .leadership-section h3 {
+   font-weight: 700;
+   font-size: 1.6rem;
+ }
+
+ .leadership-section p {
+   color: #333;
+   /* font-size: 1rem; */
+   margin-bottom: 20px;
+ }
+
+ /* ---------- Left Side Banner ---------- */
+ .main-banner img {
+   width: 100%;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+ }
+
+ /* ---------- Right Side Grid ---------- */
+ .leader-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 8px;
+ }
+
+ .leader-card {
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+   height: 260px;
+ }
+
+ .leader-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.4s ease;
+ }
+
+ .leader-card:hover img {
+   transform: scale(1.05);
+ }
+
+ /* ---------- Overlay ---------- */
+ .leader-overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.6);
+   color: #fff;
+   font-size: 0.85rem;
+ }
+
+ .leader-overlay strong {
+   display: block;
+   font-weight: 600;
+ }
+
+ /* ---------- Responsive ---------- */
+ @media (max-width: 992px) {
+   .leader-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }
+
+ @media (max-width: 767px) {
+   .leader-grid {
+     grid-template-columns: 1fr;
+   }
+
+   .leader-card {
+     height: 250px;
+   }
+ }
+
+
+
+ /* Responsive Fix */
+ @media (max-width: 767.98px) {
+   .student-card {
+     width: 100%;
+   }
+
+   .carousel-item .d-flex {
+     flex-direction: column !important;
+     align-items: center;
+   }
+ }
+
+
+
+ /* Large Tablets (≤1199px) */
+ @media (max-width: 1199px) {
+   .register-box {
+     right: 3%;
+     width: 340px;
+   }
+
+   .banner-text {
+     left: 4%;
+   }
+ }
+
+ /* Tablets (≤991px) */
+ @media (max-width: 991px) {
+   .register-box {
+     position: static;
+     transform: none;
+     margin: 40px auto;
+     width: 90%;
+   }
+
+   .hero-carousel img {
+     height: 70vh;
+   }
+
+   .banner-text {
+     position: static;
+     transform: none;
+     text-align: center;
+     padding: 30px 20px;
+   }
+
+   .banner-text h1 {
+     font-size: 1.9rem;
+   }
+
+   .banner-text p {
+     font-size: 0.95rem;
+   }
+
+   .hero-section::after {
+     height: 50px;
+   }
+
+   /* inspiring css */
+   .left-banner {
+     margin-bottom: 30px;
+   }
+
+   .right-images img {
+     height: 150px;
+   }
+ }
+
+ /* Mobile Devices (≤767px) */
+ @media (max-width: 767px) {
+   .hero-carousel img {
+     height: 65vh;
+   }
+
+   .banner-text {
+     padding: 20px;
+   }
+
+   .banner-text h1 {
+     font-size: 1.5rem;
+   }
+
+   .banner-text p {
+     font-size: 0.9rem;
+   }
+
+   .register-box {
+     width: 95%;
+     margin: 20px auto;
+     padding: 20px;
+   }
+
+   .register-box h5 {
+     font-size: 0.9rem;
+   }
+
+   .stat-item {
+     width: 150px;
+     height: 100px;
+   }
+
+   .stat-item::before {
+     width: 70px;
+     height: 70px;
+     top: -35px;
+     font-size: 16px;
+   }
+
+   .carousel-item .col-md-6 {
+     margin-bottom: 20px;
+   }
+
+   .card img {
+     height: 250px;
+   }
+
+   .carousel-item {
+     padding: 0 0px;
+   }
+
+   .carousel-control-prev {
+     right: 70px;
+   }
+
+   .carousel-control-next {
+     right: 20px;
+   }
+
+ }
+
+ @media (max-width: 576px) {
+   .leadership-section h2 {
+     font-size: 22px;
+   }
+
+   .leadership-section p.sub-text {
+     font-size: 14px;
+   }
+
+   .right-images img {
+     height: 130px;
+   }
+ }
+
+ /* Small Mobile Devices (≤480px) */
+ @media (max-width: 480px) {
+   .banner-text h1 {
+     font-size: 1.3rem;
+   }
+
+   .banner-text p {
+     font-size: 0.85rem;
+   }
+
+   .register-box {
+     padding: 15px;
+   }
+
+   .register-box .btn {
+     font-size: 0.9rem;
+   }
+ }
+
+
+/* exploring future css end */
+
 
 
  /* Placement Section */
@@ -1730,7 +2148,7 @@ html{overflow-x: hidden;}
    .campuslife-lnl-section {
      width: 100%;
      min-height: 100px;
-     padding: 20px 0px;
+     padding: 50px 0px;
      background-color: var(--whitecolor);
      float: left;
    }
@@ -1751,7 +2169,7 @@ html{overflow-x: hidden;}
 
    .campuslife-lnl-detailtxt {
      width: 100%;
-     font-size: 18px;
+     font-size: 19px;
      color: var(--blackcolor);
      font-weight: 500;
      line-height: 20px;
@@ -2815,7 +3233,7 @@ html{overflow-x: hidden;}
     }
 
     .footer-address h6 {
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 700;
       margin-bottom: 5px;
       letter-spacing: 0.5px;
@@ -2823,7 +3241,7 @@ html{overflow-x: hidden;}
 
     .footer-address p {
       margin: 0;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.5;
     }
 
@@ -2945,8 +3363,8 @@ html{overflow-x: hidden;}
 }
 
 .infra-list li {
-  margin-bottom: 6px;
-  font-size: 14px;
+  margin-bottom: 0px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -3211,6 +3629,7 @@ html{overflow-x: hidden;}
     font-size: 18px;
     margin-bottom: 18px;
   }
+
 }   
 @media (max-width: 576px) {
     .program-badge {
@@ -3226,6 +3645,9 @@ html{overflow-x: hidden;}
         height: 36px;
         font-size: 12px;
     }
+      section#nimsLife {
+    margin-top: 0rem;
+}
 }
 
 
@@ -3283,7 +3705,9 @@ html{overflow-x: hidden;}
   .infra-content{
     padding: 22px 18px;
   }
-
+  section#nimsLife {
+    margin-top: 0rem !important;
+}
     }
 
 
@@ -3301,8 +3725,8 @@ html{overflow-x: hidden;}
 }
 
 .faculty-item {
-  flex: 0 0 18%;
-  max-width: 18%;
+  flex: 0 0 19%;
+  max-width: 21%;
   display: flex;
 }
 
@@ -3311,8 +3735,9 @@ html{overflow-x: hidden;}
   border-radius: 18px;
   box-shadow: 0px 6px 25px rgba(0,0,0,0.08);
   overflow: hidden;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   transition: 0.3s ease;
@@ -3365,12 +3790,14 @@ html{overflow-x: hidden;}
 
 /* Description */
 .company p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   margin: 0;
   color: #555;
 }
-
+section#nimsLife {
+    margin-top: 12rem;
+}
 /* Responsive */
 @media (max-width: 992px) {
   .faculty-item {
